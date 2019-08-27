@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillEnabled="true">
+    <translate
+        android:duration="@integer/animation_time_show_control_up"
+        android:fromYDelta="100.0%"
+        android:toYDelta="0.0%" />
+    <alpha
+        android:duration="@integer/animation_time_show_control_up"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+</set>

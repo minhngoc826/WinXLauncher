@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="action_view_anim_in_alpha">350</integer>
+    <integer name="action_view_anim_out_alpha">150</integer>
+    <integer name="anim_time_dialog">200</integer>
+    <integer name="silent_duration">22</integer>
+    <item name="animation_time_show_control_down" type="integer">
+        @android:integer/config_shortAnimTime
+    </item>
+    <item name="animation_time_show_control_right_left" type="integer">
+        @android:integer/config_mediumAnimTime
+    </item>
+    <item name="animation_time_show_control_up" type="integer">
+        @android:integer/config_longAnimTime
+    </item>
+    <item name="animation_time_show_control_up_top" type="integer">
+        @android:integer/config_shortAnimTime
+    </item>
+
+    <integer name="enter_toast_time">@android:integer/config_mediumAnimTime</integer>
+    <integer name="exit_toast_time">@android:integer/config_shortAnimTime</integer>
+
+    <integer name="anim_duration_medium">300</integer>
+    <integer name="anim_show_alpha">600</integer>
+</resources>

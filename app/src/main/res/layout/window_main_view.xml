@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:realtimeBlurRadius="40dp"
+        app:realtimeOverlayColor="#4D636262" />
+
+
+    <com.vietbm.edgelauncher.customview.SettingsTextView
+        android:id="@+id/expand_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:drawableStart="@drawable/ic_main_menu"
+        android:drawablePadding="@dimen/_10dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_5dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.vietbm.edgelauncher.customview.SettingsTextView
+            android:id="@+id/account_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:drawableStart="@drawable/ic_main_user"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5dp"
+            android:textColor="@android:color/white" />
+
+        <com.vietbm.edgelauncher.customview.SettingsTextView
+            android:id="@+id/document_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:drawableStart="@drawable/ic_main_file"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5dp"
+            android:textColor="@android:color/white" />
+
+        <com.vietbm.edgelauncher.customview.SettingsTextView
+            android:id="@+id/picture_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:drawableStart="@drawable/ic_main_picture"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5dp"
+            android:textColor="@android:color/white" />
+
+        <com.vietbm.edgelauncher.customview.SettingsTextView
+            android:id="@+id/launcher_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:drawableStart="@drawable/ic_main_settings"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5dp"
+            android:textColor="@android:color/white" />
+
+        <com.vietbm.edgelauncher.customview.SettingsTextView
+            android:id="@+id/power_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_main_power"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <com.vietbm.edgelauncher.customview.SearchAppView
+        android:id="@+id/search_app_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_setting_panel"
+        app:layout_constraintStart_toEndOf="@+id/linner_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_setting_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+
+    <com.vietbm.edgelauncher.customview.SettingsTextView
+        android:id="@+id/life_at_glance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10dp"
+        android:text="Life at a glance"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_setting_panel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/glance_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_setting_panel"
+        app:layout_constraintTop_toBottomOf="@+id/life_at_glance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
